@@ -13,12 +13,14 @@
       chrome.storage.local.get(function(storage){
         $http.get($rootScope.xsp + '/com.broadsoft.xsi-actions/v2.0/user/' + $rootScope.username + apiName)
           .success(function(response){
+            console.log(response);
             _.each(response.AccessDevices.accessDevice, function(device){
               var deviceType = (typeof device.deviceType !== 'undefined') ? device.deviceType.$ : '';
 
               if(deviceType === chromePhoneDeviceType){
                 defer.resolve(device);
               }
+              console.log("Device type: " + deviceType);
             });
           }).error(function(error){
             console.log(error);

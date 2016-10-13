@@ -31,7 +31,9 @@
     "*://*.onvoip.net/",
     "*://*.comcast.net/",
     "*://*.ngtlab.net/",
-    "*://*.broadworks.net/"
+    "*://*.broadworks.net/",
+    "*://*.voiplogic.net/",
+    "*://*.voiplogic.com/"
   ],
   "oauth2": {
     "client_id": "946586810118-u5hlb6ur1rqaspoba6i2cmn9638pf6aa.apps.googleusercontent.com",
